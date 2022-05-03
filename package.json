@@ -1,6 +1,6 @@
 {
   "name": "com.mikeymusch.verycoolstatemachine",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "displayName": "Very Cool State Machine",
   "description": "A designer authorable ScriptableObject based finite state machine.",
   "unity": "2019.1",
