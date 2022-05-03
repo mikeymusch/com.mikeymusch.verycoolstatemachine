@@ -1,0 +1,18 @@
+{
+  "name": "com.mikeymusch.verycoolstatemachine",
+  "version": "0.0.1",
+  "displayName": "Very Cool State Machine",
+  "description": "A designer authorable ScriptableObject based finite state machine.",
+  "unity": "2019.1",
+  "keywords": [
+    "keyword1",
+    "keyword2",
+    "keyword3"
+  ],
+  "author": {
+    "name": "Mikey Musch",
+    "email": "mikeymusch@gmail.com",
+    "url": "https://github.com/mikeymusch"
+  },
+  "type": "tool"
+}
