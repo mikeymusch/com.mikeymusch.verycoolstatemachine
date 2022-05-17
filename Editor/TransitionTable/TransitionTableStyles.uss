@@ -1,0 +1,73 @@
+.transition-table-header {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(62, 62, 62);
+    border-top-width: 1px;
+    border-top-color: rgb(26, 26, 26);
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(48, 48, 48);
+    display: none;
+}
+
+.transition-table-header-label {
+    -unity-text-align: upper-center;
+    -unity-font-style: bold;
+    font-size: 16px;
+}
+
+.transition-table-body {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.transition-table-from-state-foldout {
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    margin-bottom: 10px;
+}
+
+.transition-table-from-state-foldout .unity-toggle:hover {
+    background-color: rgb(71, 71, 71);
+}
+
+.transition-table-from-state-foldout .unity-toggle:checked {
+    background-color: rgb(77, 77, 77);
+}
+
+.transition-table-from-state-foldout .unity-toggle {
+    background-color: rgb(62, 62, 62);
+}
+
+.transition-table-from-state-foldout .unity-toggle:active {
+    background-color: rgb(62, 62, 62);
+}
+
+.transition-table-from-state-foldout .unity-toggle {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.from-state-content {
+    background-color: rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.transition-table-from-state-foldout .unity-foldout__content {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
