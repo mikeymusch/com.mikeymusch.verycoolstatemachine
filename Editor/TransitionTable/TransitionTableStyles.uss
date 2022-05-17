@@ -1,73 +1,70 @@
-.transition-table-header {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.transitiontable-body {
+    padding: 20px 20px 10px;
+}
+
+.transitiontable-transition-item-parent {
     background-color: rgb(62, 62, 62);
-    border-top-width: 1px;
-    border-top-color: rgb(26, 26, 26);
-    border-bottom-width: 1px;
     border-bottom-color: rgb(48, 48, 48);
-    display: none;
-}
-
-.transition-table-header-label {
-    -unity-text-align: upper-center;
-    -unity-font-style: bold;
-    font-size: 16px;
-}
-
-.transition-table-body {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.transition-table-from-state-foldout {
-    border-bottom-width: 1px;
+    border-right-color: rgb(48, 48, 48);
     border-right-width: 1px;
+    border-bottom-width: 1px;
     margin-bottom: 10px;
 }
 
-.transition-table-from-state-foldout .unity-toggle:hover {
+.transitiontable-transition-item-foldout {
+    padding: 0;
+}
+
+.transitiontable-transition-item-foldout .unity-toggle {
+    margin: 0;
+    padding: 10px;
+}
+
+.transitiontable-transition-item-foldout .unity-toggle:checked {
+    border-bottom-color: rgb(48, 48, 48);
+    border-bottom-width: 1px;
     background-color: rgb(71, 71, 71);
 }
 
-.transition-table-from-state-foldout .unity-toggle:checked {
-    background-color: rgb(77, 77, 77);
+.transitiontable-transition-item-foldout .unity-toggle:hover {
+    background-color: rgb(71, 71, 71);
 }
 
-.transition-table-from-state-foldout .unity-toggle {
-    background-color: rgb(62, 62, 62);
+.transitiontable-transition-item-sort-parent {
+    max-width: 20px;
+    position: absolute;
+    right: 0;
+    background-color: rgb(0, 0, 0);
 }
 
-.transition-table-from-state-foldout .unity-toggle:active {
-    background-color: rgb(62, 62, 62);
+.transitiontable-transition-item-sort-parent .unity-button {
+    margin: 0;
+    min-height: 18px;
+    max-height: 18px;
+    min-width: 18px;
+    max-width: 18px;
 }
 
-.transition-table-from-state-foldout .unity-toggle {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.transitiontable-transition-item-sort-parent .unity-disabled {
+    opacity: 0.75;
 }
 
-.from-state-content {
-    background-color: rgb(255, 255, 255);
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.transitiontable-transition-item-sortup {
+    border-width: 0;
+    border-radius: 0;
+    border-left-color: rgb(48, 48, 48);
+    border-left-width: 1px;
+    font-size: 18px;
+    color: rgba(170, 170, 170, 255);
 }
 
-.transition-table-from-state-foldout .unity-foldout__content {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+.transitiontable-transition-item-sortdown {
+    border-width: 0;
+    border-radius: 0;
+    border-top-color: rgb(48, 48, 48);
+    border-left-color: rgb(48, 48, 48);
+    border-top-width: 1px;
+    border-left-width: 1px;
+    font-size: 18px;
+    color: rgba(170, 170, 170, 255);
 }
