@@ -1,70 +1,40 @@
 .transitiontable-body {
     padding: 20px 20px 10px;
+    padding-bottom: 0;
 }
 
-.transitiontable-transition-item-parent {
+.transitiongroups-list #unity-list-view__reorderable-item {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 10px;
+}
+
+.transitiongroups-list #unity-list-view__reorderable-handle {
     background-color: rgb(62, 62, 62);
-    border-bottom-color: rgb(48, 48, 48);
-    border-right-color: rgb(48, 48, 48);
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom-width: 1px;
     border-right-width: 1px;
-    border-bottom-width: 1px;
-    margin-bottom: 10px;
+    border-color: rgb(48, 48, 48);
 }
 
-.transitiontable-transition-item-foldout {
+.transitiongroups-list #unity-list-view__reorderable-item:hover #unity-list-view__reorderable-handle {
+    background-color: rgb(71, 71, 71);
+}
+
+.transitiongroups-list #unity-list-view__reorderable-item__container {
+    background-color: rgb(62, 62, 62);
     padding: 0;
-}
-
-.transitiontable-transition-item-foldout .unity-toggle {
-    margin: 0;
-    padding: 10px;
-}
-
-.transitiontable-transition-item-foldout .unity-toggle:checked {
-    border-bottom-color: rgb(48, 48, 48);
     border-bottom-width: 1px;
+    border-color: rgb(48, 48, 48);
+}
+
+.transitiongroups-list #unity-list-view__reorderable-item:hover #unity-list-view__reorderable-item__container {
     background-color: rgb(71, 71, 71);
 }
 
-.transitiontable-transition-item-foldout .unity-toggle:hover {
-    background-color: rgb(71, 71, 71);
-}
-
-.transitiontable-transition-item-sort-parent {
-    max-width: 20px;
-    position: absolute;
-    right: 0;
-    background-color: rgb(0, 0, 0);
-}
-
-.transitiontable-transition-item-sort-parent .unity-button {
-    margin: 0;
-    min-height: 18px;
-    max-height: 18px;
-    min-width: 18px;
-    max-width: 18px;
-}
-
-.transitiontable-transition-item-sort-parent .unity-disabled {
-    opacity: 0.75;
-}
-
-.transitiontable-transition-item-sortup {
-    border-width: 0;
-    border-radius: 0;
-    border-left-color: rgb(48, 48, 48);
-    border-left-width: 1px;
-    font-size: 18px;
-    color: rgba(170, 170, 170, 255);
-}
-
-.transitiontable-transition-item-sortdown {
-    border-width: 0;
-    border-radius: 0;
-    border-top-color: rgb(48, 48, 48);
-    border-left-color: rgb(48, 48, 48);
-    border-top-width: 1px;
-    border-left-width: 1px;
-    font-size: 18px;
-    color: rgba(170, 170, 170, 255);
+.transitiongroups-list .unity-scroller:disabled {
+    padding: 100px;
+    display: none;
 }

@@ -37,15 +37,16 @@ namespace com.mikeymusch.verycoolstatemachine
         void LoadAndCloneMarkup()
         {
             VisualTreeAsset visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(
-                "Packages/com.mikeymusch.verycoolstatemachine/Editor/TransitionTable/TransitionTableMarkup.uxml");
+                //"Packages/com.mikeymusch.verycoolstatemachine/Editor/TransitionTable/TransitionTableMarkup.uxml");
+                "Assets/TransitionTableMarkup.uxml");
             visualTree.CloneTree(_visualElement);
         }
         void FillBodyWithFromStateElements()
         {
-            if (!_transitionTable.transitionGroups.Any())
+            /*if (!_transitionTable.transitionGroups.Any())
             {
                 // display no states warning
-            }
+            }*/
 
             // myButton.SetEnabled(false); - use this to disable a button
             

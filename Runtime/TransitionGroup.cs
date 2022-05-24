@@ -7,8 +7,13 @@ namespace com.mikeymusch.verycoolstatemachine
     [Serializable]
     public struct TransitionGroup
     {
-        [SerializeField] int index;
         [SerializeField] State fromState;
         [SerializeField] List<Transition> transitions;
+
+        public TransitionGroup(State fromState, List<Transition> transitions)
+        {
+            this.fromState = fromState;
+            this.transitions = transitions;
+        }
     }
 }
