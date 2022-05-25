@@ -17,6 +17,7 @@ namespace com.mikeymusch.verycoolstatemachine
 
             Foldout foldout = _visualElement.Q<Foldout>("transitionGroupFoldout");
             foldout.text = ObjectNames.NicifyVariableName(property.FindPropertyRelative("fromState").objectReferenceValue.name);
+            foldout.viewDataKey = foldout.text;
 
             return _visualElement;
         }

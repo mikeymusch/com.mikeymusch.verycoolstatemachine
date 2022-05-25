@@ -48,7 +48,7 @@ namespace com.mikeymusch.verycoolstatemachine
             transitionGroups = new List<TransitionGroup>()
             {
                 _idleTransitionGroup,
-                //_moveTransitionGroup
+                _moveTransitionGroup
             };
         }
     }
