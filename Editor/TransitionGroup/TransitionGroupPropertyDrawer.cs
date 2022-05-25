@@ -14,7 +14,9 @@ namespace com.mikeymusch.verycoolstatemachine
             _visualElement = new VisualElement();
 
             LoadAndCloneMarkup();
-            //DisplayTransitionGroupFoldout(property);
+
+            Foldout foldout = _visualElement.Q<Foldout>("transitionGroupFoldout");
+            foldout.text = ObjectNames.NicifyVariableName(property.FindPropertyRelative("fromState").objectReferenceValue.name);
 
             return _visualElement;
         }
@@ -26,13 +28,6 @@ namespace com.mikeymusch.verycoolstatemachine
                 //"Packages/com.mikeymusch.verycoolstatemachine/Editor/TransitionGroup/TransitionGroupMarkup.uxml");
                 "Assets/TransitionGroupMarkup.uxml");
             visualTree.CloneTree(_visualElement);
-        }
-
-        void DisplayTransitionGroupFoldout(SerializedProperty property)
-        {
-            var foldout = new Foldout();
-            foldout.text = ObjectNames.NicifyVariableName(property.FindPropertyRelative("fromState").objectReferenceValue.name);
-            _visualElement.Add(foldout);
         }
     }
 }

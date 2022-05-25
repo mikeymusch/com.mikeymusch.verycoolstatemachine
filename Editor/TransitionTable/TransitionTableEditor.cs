@@ -1,8 +1,4 @@
-using System.Collections.Generic;
-using System.Linq;
 using UnityEditor;
-using UnityEditor.UIElements;
-using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace com.mikeymusch.verycoolstatemachine
@@ -19,21 +15,17 @@ namespace com.mikeymusch.verycoolstatemachine
         {
             _transitionTable = (TransitionTable)target;
         }
-
-        
         
         public override VisualElement CreateInspectorGUI()
         {
             _visualElement = new VisualElement();
 
             LoadAndCloneMarkup();
-            FillBodyWithFromStateElements();
+            HideVerticalScrollVisibility();
 
             return _visualElement;
         }
 
-        
-        
         void LoadAndCloneMarkup()
         {
             VisualTreeAsset visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(
@@ -41,16 +33,11 @@ namespace com.mikeymusch.verycoolstatemachine
                 "Assets/TransitionTableMarkup.uxml");
             visualTree.CloneTree(_visualElement);
         }
-        void FillBodyWithFromStateElements()
+        void HideVerticalScrollVisibility()
         {
-            /*if (!_transitionTable.transitionGroups.Any())
-            {
-                // display no states warning
-            }*/
-
-            // myButton.SetEnabled(false); - use this to disable a button
-            
-            VisualElement body = _visualElement.Q<VisualElement>("body");
+            ListView listView = _visualElement.Q<ListView>("transitionGroupsListView");
+            ScrollView scrollView = listView.Q<ScrollView>("", "unity-scroll-view");
+            scrollView.verticalScrollerVisibility = ScrollerVisibility.Hidden;
         }
     }
 }

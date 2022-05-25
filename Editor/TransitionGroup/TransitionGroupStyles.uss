@@ -1,10 +1,16 @@
-.transitiongroup-foldout {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+#transitionGroupFoldout > .unity-toggle {
+    background-color: rgb(62, 62, 62);
+    margin: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(48, 48, 48);
+    padding: 10px;
 }
 
-.transitiongroup-foldout .unity-toggle {
+#transitionGroupFoldout > #unity-content {
     margin: 0;
+    margin-right: -47px;
+    padding: 10px;
+    background-color: rgb(62, 62, 62);
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(48, 48, 48);
 }
