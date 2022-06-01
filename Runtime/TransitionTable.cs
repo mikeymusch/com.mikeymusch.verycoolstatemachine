@@ -37,11 +37,14 @@ namespace com.mikeymusch.verycoolstatemachine
 
             _idleToMoveConditions = new ConditionGroup(new List<ConditionItem>() {_movePressed});
             _moveToIdleConditions = new ConditionGroup(new List<ConditionItem>() {_moveNotPressed});
+            var _testConditions = new ConditionGroup(new List<ConditionItem>() { });
+            var _testConditions2 = new ConditionGroup(new List<ConditionItem>() { });
 
-            _idleToMoveTransition = new Transition(idleState, moveState, new List<ConditionGroup>(){_idleToMoveConditions});
+            _idleToMoveTransition = new Transition(idleState, moveState, new List<ConditionGroup>(){_idleToMoveConditions, _testConditions});
             _moveToIdleTransition = new Transition(moveState, idleState, new List<ConditionGroup>(){_moveToIdleConditions});
+            var _testTransition = new Transition(moveState, idleState, new List<ConditionGroup>(){_testConditions2});
 
-            _idleTransitionGroup = new TransitionGroup(idleState, new List<Transition>(){_idleToMoveTransition});
+            _idleTransitionGroup = new TransitionGroup(idleState, new List<Transition>(){_idleToMoveTransition,_testTransition});
             _moveTransitionGroup = new TransitionGroup(moveState, new List<Transition>(){_moveToIdleTransition});
             #endregion
             

@@ -1,21 +1,21 @@
 .transitiontable-body {
-    padding: 20px 20px 10px;
+    padding: 20px 20px 0;
     padding-bottom: 0;
 }
 
 #transitionGroupsListView #unity-list-view__reorderable-item {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     background-color: rgba(0, 0, 0, 0);
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */ 
     position: relative;
 }
 
 #transitionGroupsListView #unity-list-view__reorderable-handle {
     padding-left: 16px;
     padding-right: 16px;
-    background-color: rgb(62, 62, 62);
+    background-color: rgba(62, 62, 62, 0);
     border-bottom-width: 1px;
-    border-bottom-color: rgb(48, 48, 48);
+    border-color: rgb(48, 48, 48);
     position: relative;
     width: 47px;
     height: 37px;
@@ -23,10 +23,15 @@
     top: 0;
 }
 
-#transitionGroupsListView #unity-list-view__reorderable-handle:hover {
-    background-color: rgb(71, 71, 71);
+#transitionGroupsListView #unity-list-view__reorderable-handle:hover, #unity-list-view__reorderable-handle-bar {
+    /* background-color: rgb(77, 77, 77); */
+    cursor: pan;
 }
 
 #transitionGroupsListView #unity-list-view__reorderable-item__container {
     padding: 0;
+}
+
+.hello-world {
+    background-color: bisque;
 }

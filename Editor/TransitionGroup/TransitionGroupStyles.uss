@@ -1,16 +1,25 @@
 #transitionGroupFoldout > .unity-toggle {
     background-color: rgb(62, 62, 62);
     margin: 0;
+    margin-right: -47px;
     border-bottom-width: 1px;
     border-bottom-color: rgb(48, 48, 48);
     padding: 10px;
 }
 
+#transitionGroupFoldout > .unity-toggle:hover, #transitionGroupFoldout > .unity-toggle:checked {
+    background-color: rgb(77, 77, 77);
+}
+
 #transitionGroupFoldout > #unity-content {
     margin: 0;
     margin-right: -47px;
-    padding: 10px;
+    padding: 20px 20px 10px;
     background-color: rgb(62, 62, 62);
     border-bottom-width: 1px;
     border-bottom-color: rgb(48, 48, 48);
+}
+
+#transitionGroupListView #unity-list-view__reorderable-item {
+    padding-bottom: 10px;
 }
