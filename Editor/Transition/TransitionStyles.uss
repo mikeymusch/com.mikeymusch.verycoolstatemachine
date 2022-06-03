@@ -1,6 +1,7 @@
 #transitionFoldout > .unity-toggle {
     background-color: rgb(71, 71, 71);
     margin: 0;
+    margin-right: -47px;
     border-bottom-width: 1px;
     border-bottom-color: rgb(48, 48, 48);
     padding: 10px;

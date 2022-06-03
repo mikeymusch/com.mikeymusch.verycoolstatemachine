@@ -28,5 +28,15 @@ namespace com.mikeymusch.verycoolstatemachine
                 element.parent.SendToBack();
             };
         }
+
+        public static void SlideAndHideVisualElement(VisualElement visualElement, string nameOfElementToSlide, bool slideToLeft)
+        {
+            var elementToSlide = visualElement.Q<VisualElement>(nameOfElementToSlide);
+            var distanceToSlide = visualElement.contentRect.width;
+            elementToSlide.style.translate = slideToLeft ? 
+                new StyleTranslate(new Translate(-distanceToSlide, 0, 0)) : 
+                new StyleTranslate(new Translate(distanceToSlide, 0, 0));
+            elementToSlide.style.opacity = 0f;
+        }
     }
 }

@@ -16,9 +16,10 @@ namespace com.mikeymusch.verycoolstatemachine
             LoadAndCloneMarkup(_visualElement, "Assets/TransitionGroupMarkup.uxml");
             // Dist path ver: "Packages/com.mikeymusch.verycoolstatemachine/Editor/TransitionGroup/TransitionGroupMarkup.uxml"
             HideScrollViewVerticalScrollbar(_visualElement, "transitionGroupListView");
+            SendReorderableItemParentToBack(_visualElement, "transitionGroupListView", property.FindPropertyRelative("transitions"));
             
             Foldout foldout = _visualElement.Q<Foldout>("transitionGroupFoldout");
-            foldout.text = ObjectNames.NicifyVariableName(property.FindPropertyRelative("fromState").objectReferenceValue.name);
+            foldout.text = ObjectNames.NicifyVariableName("From " + property.FindPropertyRelative("fromState").objectReferenceValue.name);
             foldout.viewDataKey = foldout.text;
             
             return _visualElement;

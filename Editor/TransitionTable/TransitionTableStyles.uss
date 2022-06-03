@@ -1,4 +1,4 @@
-.transitiontable-body {
+.transitiontable-body, #addTransitionBody {
     padding: 20px 20px 0;
     padding-bottom: 0;
 }
@@ -32,6 +32,9 @@
     padding: 0;
 }
 
-.hello-world {
-    background-color: bisque;
+.canSlideAndHide {
+    transition-delay: 0, 250ms;
+    transition-duration: 250ms, 0;
+    transition-property: translate, opacity;
+    transition-timing-function: EaseOut, Ease;
 }
