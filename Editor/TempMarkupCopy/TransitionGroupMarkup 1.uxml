@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mikeymusch.verycoolstatemachine/Editor/TransitionGroup/TransitionGroupStyles.uss?fileID=7433441132597879392&amp;guid=b10a3497bc4b48c4bb30fb5482cb4b7a&amp;type=3#TransitionGroupStyles" />
+    <ui:Foldout text="Foldout" name="transitionGroupFoldout" value="false" focusable="false" class="transitiongroup-foldout">
+        <ui:ListView focusable="false" reorderable="true" show-bound-collection-size="false" virtualization-method="DynamicHeight" binding-path="transitions" reorder-mode="Animated" name="transitionGroupListView" view-data-key="transitionGroupVDK" />
+    </ui:Foldout>
+</ui:UXML>

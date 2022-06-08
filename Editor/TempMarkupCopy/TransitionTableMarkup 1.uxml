@@ -1,0 +1,29 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mikeymusch.verycoolstatemachine/Editor/TransitionTable/TransitionTableStyles.uss?fileID=7433441132597879392&amp;guid=1536af4832b598541a6b5c6111c942e0&amp;type=3#TransitionTableStyles" />
+    <ui:VisualElement name="TestingFields" style="display: none;">
+        <uie:PropertyField binding-path="moveState" />
+        <uie:PropertyField binding-path="jumpState" />
+        <uie:PropertyField binding-path="attackState" />
+        <uie:PropertyField binding-path="movePressedCondition" />
+        <uie:PropertyField binding-path="attackPressedCondition" />
+        <uie:PropertyField binding-path="jumpPressedCondition" />
+        <uie:PropertyField binding-path="idleState" />
+    </ui:VisualElement>
+    <ui:VisualElement name="body" class="transitiontable-body canSlideAndHide">
+        <ui:ListView focusable="false" show-bound-collection-size="false" reorderable="true" reorder-mode="Animated" virtualization-method="DynamicHeight" binding-path="transitionGroups" name="transitionGroupsListView" view-data-key="transitionGroupsVDK" class="transitiongroups-list" />
+        <ui:Button text="Add a Transition" display-tooltip-when-elided="true" focusable="false" name="addATransitionButton" />
+    </ui:VisualElement>
+    <ui:VisualElement name="addTransitionBody" class="canSlideAndHide">
+        <ui:Button text="Back" display-tooltip-when-elided="true" />
+        <ui:Button text="Create a Transition" display-tooltip-when-elided="true" name="createATransitionButton" />
+        <ui:Label text="Create a New Transition" display-tooltip-when-elided="true" />
+        <uie:ObjectField label="From State" allow-scene-objects="false" name="fromStateObjectField" />
+        <uie:ObjectField label="To State" allow-scene-objects="false" name="toStateObjectField" />
+        <ui:Label text="Conditions" display-tooltip-when-elided="true" name="createTransitionConditionsLabel" />
+        <ui:ListView focusable="true" name="createTransitionConditionsList" />
+        <ui:VisualElement name="createTransitionAddConditionsParent">
+            <ui:Button text="Add Event" display-tooltip-when-elided="true" focusable="false" />
+            <ui:Button text="Add Condition" display-tooltip-when-elided="true" focusable="false" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

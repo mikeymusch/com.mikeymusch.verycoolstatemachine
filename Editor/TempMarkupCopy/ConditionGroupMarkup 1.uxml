@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.mikeymusch.verycoolstatemachine/Editor/ConditionGroup/ConditionGroupStyles.uss?fileID=7433441132597879392&amp;guid=61e5fe13a81e110488bf453f8bf23e8e&amp;type=3#ConditionGroupStyles" />
+    <ui:Label text="conditionGroup" display-tooltip-when-elided="true" style="background-color: rgba(77, 77, 77, 255);" />
+</ui:UXML>
